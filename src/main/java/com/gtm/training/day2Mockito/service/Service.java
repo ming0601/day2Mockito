@@ -1,5 +1,7 @@
 package com.gtm.training.day2Mockito.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.gtm.training.day2Mockito.dao.IDao;
@@ -19,5 +21,10 @@ public class Service {
 	public Client getByName(String name) {
 		
 		return this.dao.getByName(name);
+	}
+	
+	public List<Client> getAll() {
+		
+		return this.dao.findAll();
 	}
 }
