@@ -1,5 +1,8 @@
 package com.gtm.training.day2Mockito.dao;
 
+import java.util.List;
+
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,6 +19,12 @@ public class DaoTest {
 	@BeforeEach
 	void init() {
 		dao.save(new Client("Jean", "123"));
+		dao.save(new Client("Sebastien", "124"));
+	}
+	
+	@AfterEach
+	void flush() {
+		dao.deleteAll();
 	}
 		
 	@Test
@@ -37,6 +46,16 @@ public class DaoTest {
 		dao.deleteByName("Jean");
 		Client nullClient = dao.getByName("Jean");
 		Assertions.assertNull(nullClient);
+	}
+	
+	@Test
+	void getAll() {
+		List<Client> clients = dao.findAll();
+		Assertions.assertEquals(2, clients.size());
+		Assertions.assertEquals("Jean", clients.get(0).getName());
+		Assertions.assertEquals("123", clients.get(0).getAccountNumber());
+		Assertions.assertEquals("Sebastien", clients.get(1).getName());
+		Assertions.assertEquals("124", clients.get(1).getAccountNumber());
 	}
 
 }
