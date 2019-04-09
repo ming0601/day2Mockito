@@ -15,4 +15,9 @@ public class Service {
 		
 		return this.dao.save(client);
 	}
+	
+	public Client getByName(String name) {
+		
+		return this.dao.getByName(name);
+	}
 }

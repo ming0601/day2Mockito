@@ -44,4 +44,15 @@ public class ServiceTest {
 		
 		Assert.assertEquals(client, result);
 	}
+	
+	@Test
+	public void testGet() {
+		
+		Client client = new Client("Jean", "123");
+		
+		when(dao.getByName("Jean")).thenReturn(client);
+		
+		Assert.assertEquals(client, service.getByName("Jean"));
+	}
+	
 }
