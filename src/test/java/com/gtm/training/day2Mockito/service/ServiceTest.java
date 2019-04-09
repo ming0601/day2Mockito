@@ -1,5 +1,9 @@
 package com.gtm.training.day2Mockito.service;
 
+import static org.hamcrest.CoreMatchers.isA;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
@@ -59,6 +63,15 @@ public class ServiceTest {
 		Assert.assertEquals(client, service.getByName("Jean"));
 	}
 	
+	@Test
+	public void testDelete() {
+		
+		doNothing().when(dao).deleteByName("Jean");
+		
+		service.deleteByName("Jean");
+		
+		verify(dao, times(1)).deleteByName("Jean");
+	}
 	
 	@Test
 	public void getAll() {

@@ -18,6 +18,11 @@ public class Service {
 		return this.dao.save(client);
 	}
 	
+	public void deleteByName(String name) {
+		
+		this.dao.deleteByName(name);
+	}
+	
 	public Client getByName(String name) {
 		
 		return this.dao.getByName(name);
