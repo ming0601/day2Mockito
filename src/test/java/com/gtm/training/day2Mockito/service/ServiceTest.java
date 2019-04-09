@@ -31,13 +31,10 @@ public class ServiceTest {
 	public void setup() {
 		
 		MockitoAnnotations.initMocks(this);
-		
-		service.setDao(dao);
 	}
 	
 	@Test
 	public void testInsert() {
-		
 		
 		Client client = new Client("Roger", "000015");
 		
@@ -46,6 +43,5 @@ public class ServiceTest {
 		Client result = service.saveClient(client);
 		
 		Assert.assertEquals(client, result);
-		
 	}
 }
