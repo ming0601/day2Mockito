@@ -1,4 +1,4 @@
-package com.gtm.training.day4Selenium;
+package com.gtm.training.dayFourSelenium;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -8,8 +8,11 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.gtm.training.dayFourSelenium.RunEnvironment;
+import com.gtm.training.dayFourSelenium.SeleniumConfig;
+
 public class DemoTest {
-	
+	//Sonar 3dc45f81d5e5055d410ec8c98f0972aae230d495
 	@BeforeEach
 	void startBrowser() {
 		SeleniumConfig.initWebDriver();

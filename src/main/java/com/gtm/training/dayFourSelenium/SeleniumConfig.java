@@ -1,4 +1,4 @@
-package com.gtm.training.day4Selenium;
+package com.gtm.training.dayFourSelenium;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

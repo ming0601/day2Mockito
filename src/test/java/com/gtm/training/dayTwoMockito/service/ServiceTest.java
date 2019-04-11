@@ -1,4 +1,4 @@
-package com.gtm.training.day2Mockito.service;
+package com.gtm.training.dayTwoMockito.service;
 
 import static org.hamcrest.CoreMatchers.isA;
 import static org.mockito.Mockito.doNothing;
@@ -21,8 +21,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.gtm.training.day2Mockito.dao.IDao;
-import com.gtm.training.day2Mockito.model.Client;
+import com.gtm.training.dayTwoMockito.dao.IDao;
+import com.gtm.training.dayTwoMockito.model.Client;
+import com.gtm.training.dayTwoMockito.service.Service;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

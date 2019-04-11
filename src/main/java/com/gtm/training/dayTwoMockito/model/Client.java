@@ -1,4 +1,4 @@
-package com.gtm.training.day2Mockito.model;
+package com.gtm.training.dayTwoMockito.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

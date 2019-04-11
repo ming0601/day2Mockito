@@ -1,4 +1,4 @@
-package com.gtm.training.day2Mockito;
+package com.gtm.training.dayTwoMockito;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

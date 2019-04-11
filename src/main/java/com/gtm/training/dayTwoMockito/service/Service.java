@@ -1,11 +1,11 @@
-package com.gtm.training.day2Mockito.service;
+package com.gtm.training.dayTwoMockito.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.gtm.training.day2Mockito.dao.IDao;
-import com.gtm.training.day2Mockito.model.Client;
+import com.gtm.training.dayTwoMockito.dao.IDao;
+import com.gtm.training.dayTwoMockito.model.Client;
 
 @org.springframework.stereotype.Service
 public class Service {

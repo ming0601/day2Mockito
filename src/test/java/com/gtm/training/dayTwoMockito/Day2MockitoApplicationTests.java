@@ -1,4 +1,4 @@
-package com.gtm.training.day2Mockito;
+package com.gtm.training.dayTwoMockito;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

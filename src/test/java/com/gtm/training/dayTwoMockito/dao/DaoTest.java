@@ -1,4 +1,4 @@
-package com.gtm.training.day2Mockito.dao;
+package com.gtm.training.dayTwoMockito.dao;
 
 import java.util.List;
 
@@ -8,7 +8,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import com.gtm.training.day2Mockito.model.Client;
+
+import com.gtm.training.dayTwoMockito.dao.IDao;
+import com.gtm.training.dayTwoMockito.model.Client;
 
 @SpringBootTest
 public class DaoTest {
